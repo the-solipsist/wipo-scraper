@@ -65,7 +65,7 @@ def main():
         r = requests.get(url)
         print "Requested"
         filename = os.path.join(current_folder, 'files',
-                                ''.join([str(event),
+                                ''.join([str(event),'_',
                                          str(datetime.utcnow()),
                                          '.html']))
         print "Writing to {t.green} {filename} {t.normal}".format(
